@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IP Checker</title>
+</head>
+<body>
+    <h1>IP Address Checker</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="post">
+        <input type="text" name="ip" placeholder="Enter IP address" required>
+        <button type="submit">Check IP</button>
+    </form>
+</body>
+</html>
